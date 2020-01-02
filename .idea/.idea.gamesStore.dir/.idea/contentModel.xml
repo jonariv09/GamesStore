@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.Rider2019.2/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.2/system/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_.19.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p=".gitignore" t="Include" />
+      <e p="ClientApp" t="Include">
+        <e p=".gitignore" t="Include" />
+        <e p="README.md" t="Include" />
+        <e p="gitflow" t="Include">
+          <e p=".git" t="Include">
+            <e p="HEAD" t="Include" />
+            <e p="config" t="Include" />
+            <e p="description" t="Include" />
+            <e p="hooks" t="Include">
+              <e p="applypatch-msg.sample" t="Include" />
+              <e p="commit-msg.sample" t="Include" />
+              <e p="fsmonitor-watchman.sample" t="Include" />
+              <e p="post-update.sample" t="Include" />
+              <e p="pre-applypatch.sample" t="Include" />
+              <e p="pre-commit.sample" t="Include" />
+              <e p="pre-push.sample" t="Include" />
+              <e p="pre-rebase.sample" t="Include" />
+              <e p="pre-receive.sample" t="Include" />
+              <e p="prepare-commit-msg.sample" t="Include" />
+              <e p="update.sample" t="Include" />
+            </e>
+            <e p="index" t="Include" />
+            <e p="info" t="Include">
+              <e p="exclude" t="Include" />
+            </e>
+            <e p="logs" t="Include">
+              <e p="HEAD" t="Include" />
+              <e p="refs" t="Include">
+                <e p="heads" t="Include">
+                  <e p="develop" t="Include" />
+                </e>
+                <e p="remotes" t="Include">
+                  <e p="origin" t="Include">
+                    <e p="HEAD" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="modules" t="Include">
+              <e p="shFlags" t="Include">
+                <e p="HEAD" t="Include" />
+                <e p="config" t="Include" />
+                <e p="description" t="Include" />
+                <e p="hooks" t="Include">
+                  <e p="applypatch-msg.sample" t="Include" />
+                  <e p="commit-msg.sample" t="Include" />
+                  <e p="fsmonitor-watchman.sample" t="Include" />
+                  <e p="post-update.sample" t="Include" />
+                  <e p="pre-applypatch.sample" t="Include" />
+                  <e p="pre-commit.sample" t="Include" />
+                  <e p="pre-push.sample" t="Include" />
+                  <e p="pre-rebase.sample" t="Include" />
+                  <e p="pre-receive.sample" t="Include" />
+                  <e p="prepare-commit-msg.sample" t="Include" />
+                  <e p="update.sample" t="Include" />
+                </e>
+                <e p="index" t="Include" />
+                <e p="info" t="Include">
+                  <e p="exclude" t="Include" />
+                </e>
+                <e p="logs" t="Include">
+                  <e p="HEAD" t="Include" />
+                  <e p="refs" t="Include">
+                    <e p="heads" t="Include">
+                      <e p="master" t="Include" />
+                    </e>
+                    <e p="remotes" t="Include">
+                      <e p="origin" t="Include">
+                        <e p="HEAD" t="Include" />
+                      </e>
+                    </e>
+                  </e>
+                </e>
+                <e p="objects" t="Include">
+                  <e p="pack" t="Include">
+                    <e p="pack-0d912369ff94c981c3fdd6bed04c15546580a815.idx" t="Include" />
+                    <e p="pack-0d912369ff94c981c3fdd6bed04c15546580a815.pack" t="Include" />
+                  </e>
+                </e>
+                <e p="packed-refs" t="Include" />
+                <e p="refs" t="Include">
+                  <e p="heads" t="Include">
+                    <e p="master" t="Include" />
+                  </e>
+                  <e p="remotes" t="Include">
+                    <e p="origin" t="Include">
+                      <e p="HEAD" t="Include" />
+                    </e>
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="objects" t="Include">
+              <e p="pack" t="Include">
+                <e p="pack-666116f3db4a87f5960f81920a7d266e9749a864.idx" t="Include" />
+                <e p="pack-666116f3db4a87f5960f81920a7d266e9749a864.pack" t="Include" />
+              </e>
+            </e>
+            <e p="packed-refs" t="Include" />
+            <e p="refs" t="Include">
+              <e p="heads" t="Include">
+                <e p="develop" t="Include" />
+              </e>
+              <e p="remotes" t="Include">
+                <e p="origin" t="Include">
+                  <e p="HEAD" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p=".gitignore" t="Include" />
+          <e p=".gitmodules" t="Include" />
+          <e p="AUTHORS" t="Include" />
+          <e p="Changes.mdown" t="Include" />
+          <e p="LICENSE" t="Include" />
+          <e p="Makefile" t="Include" />
+          <e p="README.mdown" t="Include" />
+          <e p="bump-version" t="Include" />
+          <e p="contrib" t="Include">
+            <e p="gitflow-installer.sh" t="Include" />
+            <e p="msysgit-install.cmd" t="Include" />
+          </e>
+          <e p="git-flow" t="Include" />
+          <e p="git-flow-feature" t="Include" />
+          <e p="git-flow-hotfix" t="Include" />
+          <e p="git-flow-init" t="Include" />
+          <e p="git-flow-release" t="Include" />
+          <e p="git-flow-support" t="Include" />
+          <e p="git-flow-version" t="Include" />
+          <e p="gitflow-common" t="Include" />
+          <e p="gitflow-shFlags" t="Include" />
+          <e p="shFlags" t="Include">
+            <e p=".git" t="Include" />
+            <e p="README.html" t="Include" />
+            <e p="README.txt" t="Include" />
+            <e p="bin" t="Include">
+              <e p="gen_test_results.sh" t="Include" />
+            </e>
+            <e p="doc" t="Include">
+              <e p="CHANGES-1.0.txt" t="Include" />
+              <e p="LGPL-2.1" t="Include" />
+              <e p="LICENSE.shunit2" t="Include" />
+              <e p="RELEASE_NOTES-1.0.0.txt" t="Include" />
+              <e p="RELEASE_NOTES-1.0.1.txt" t="Include" />
+              <e p="RELEASE_NOTES-1.0.2.txt" t="Include" />
+              <e p="RELEASE_NOTES-1.0.3.txt" t="Include" />
+              <e p="TODO.txt" t="Include" />
+              <e p="coding_standards.txt" t="Include" />
+              <e p="contributors.txt" t="Include" />
+              <e p="rst2html.css" t="Include" />
+            </e>
+            <e p="examples" t="Include">
+              <e p="debug_output.sh" t="Include" />
+              <e p="hello_world.sh" t="Include" />
+              <e p="write_date.sh" t="Include" />
+            </e>
+            <e p="lib" t="Include">
+              <e p="shunit2" t="Include" />
+              <e p="versions" t="Include" />
+            </e>
+            <e p="src" t="Include">
+              <e p="shflags" t="Include" />
+              <e p="shflags_test.sh" t="Include" />
+              <e p="shflags_test_defines.sh" t="Include" />
+              <e p="shflags_test_helpers" t="Include" />
+              <e p="shflags_test_parsing.sh" t="Include" />
+              <e p="shflags_test_private.sh" t="Include" />
+              <e p="shflags_test_public.sh" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="node_modules/@emotion/hash" t="IncludeRecursive" />
+        <e p="node_modules/@material-ui/core" t="IncludeRecursive" />
+        <e p="node_modules/@material-ui/icons" t="IncludeRecursive" />
+        <e p="node_modules/@material-ui/styles" t="IncludeRecursive" />
+        <e p="node_modules/@material-ui/system" t="IncludeRecursive" />
+        <e p="node_modules/@material-ui/types" t="IncludeRecursive" />
+        <e p="node_modules/@material-ui/utils" t="IncludeRecursive" />
+        <e p="node_modules/@types" t="IncludeRecursive">
+          <e p="prop-types" t="IncludeRecursive" />
+          <e p="react" t="IncludeRecursive" />
+        </e>
+        <e p="node_modules/ajv" t="IncludeRecursive" />
+        <e p="node_modules/babel-eslint" t="IncludeRecursive" />
+        <e p="node_modules/bootstrap" t="IncludeRecursive" />
+        <e p="node_modules/clsx" t="IncludeRecursive" />
+        <e p="node_modules/cross-env" t="IncludeRecursive" />
+        <e p="node_modules/csstype" t="IncludeRecursive" />
+        <e p="node_modules/eslint" t="IncludeRecursive" />
+        <e p="node_modules/eslint-config-react-app" t="IncludeRecursive" />
+        <e p="node_modules/eslint-plugin-flowtype" t="IncludeRecursive" />
+        <e p="node_modules/eslint-plugin-import" t="IncludeRecursive" />
+        <e p="node_modules/eslint-plugin-jsx-a11y" t="IncludeRecursive" />
+        <e p="node_modules/eslint-plugin-react" t="IncludeRecursive" />
+        <e p="node_modules/hoist-non-react-statics" t="IncludeRecursive" />
+        <e p="node_modules/is-in-browser" t="IncludeRecursive" />
+        <e p="node_modules/jquery" t="IncludeRecursive" />
+        <e p="node_modules/jss" t="IncludeRecursive" />
+        <e p="node_modules/jss-plugin-camel-case" t="IncludeRecursive" />
+        <e p="node_modules/jss-plugin-default-unit" t="IncludeRecursive" />
+        <e p="node_modules/jss-plugin-global" t="IncludeRecursive" />
+        <e p="node_modules/jss-plugin-nested" t="IncludeRecursive" />
+        <e p="node_modules/jss-plugin-props-sort" t="IncludeRecursive" />
+        <e p="node_modules/jss-plugin-rule-value-function" t="IncludeRecursive" />
+        <e p="node_modules/jss-plugin-vendor-prefixer" t="IncludeRecursive" />
+        <e p="node_modules/node-sass" t="IncludeRecursive" />
+        <e p="node_modules/node-sass-chokidar" t="IncludeRecursive" />
+        <e p="node_modules/normalize-scroll-left" t="IncludeRecursive" />
+        <e p="node_modules/npm-run-all" t="IncludeRecursive" />
+        <e p="node_modules/popper.js" t="IncludeRecursive" />
+        <e p="node_modules/react" t="IncludeRecursive" />
+        <e p="node_modules/react-dom" t="IncludeRecursive" />
+        <e p="node_modules/react-feather" t="IncludeRecursive" />
+        <e p="node_modules/react-router-bootstrap" t="IncludeRecursive" />
+        <e p="node_modules/react-router-dom" t="IncludeRecursive" />
+        <e p="node_modules/react-scripts" t="IncludeRecursive" />
+        <e p="node_modules/reactstrap" t="IncludeRecursive" />
+        <e p="node_modules/rimraf" t="IncludeRecursive" />
+        <e p="node_modules/tiny-warning" t="IncludeRecursive" />
+        <e p="package-lock.json" t="Include" />
+        <e p="package.json" t="Include" />
+        <e p="public" t="Include">
+          <e p="favicon.ico" t="Include" />
+          <e p="index.html" t="Include" />
+          <e p="manifest.json" t="Include" />
+        </e>
+        <e p="scss" t="Include">
+          <e p="custom.scss" t="Include" />
+        </e>
+        <e p="src" t="Include">
+          <e p="App.js" t="Include" />
+          <e p="components" t="Include">
+            <e p="Structure" t="Include">
+              <e p="NavBar.js" t="Include" />
+            </e>
+          </e>
+          <e p="index.js" t="Include" />
+          <e p="registerServiceWorker.js" t="Include" />
+          <e p="styles" t="Include">
+            <e p="NavBar.css" t="Include" />
+            <e p="NavBar.scss" t="Include" />
+            <e p="styles.css" t="Include" />
+            <e p="styles.scss" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Controllers" t="Include">
+        <e p="SampleDataController.cs" t="Include" />
+      </e>
+      <e p="Pages" t="Include">
+        <e p="Error.cshtml" t="Include" />
+        <e p="Error.cshtml.cs" t="Include" />
+        <e p="_ViewImports.cshtml" t="Include" />
+      </e>
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="launchSettings.json" t="Include" />
+      </e>
+      <e p="Startup.cs" t="Include" />
+      <e p="appsettings.Development.json" t="Include" />
+      <e p="appsettings.json" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="gamesStore.csproj" t="IncludeRecursive" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp2.2" t="Include">
+            <e p="gamesStore.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="package-lock.json" t="Include" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
-import { Search } from 'react-feather';
+import { Search,  } from 'react-feather';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 
 
-class NavBar extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  };
+export default function NavBar() {
+    const [anchorEl, setAnchorEl] = React.useState(null)
+    
+    const handleClick = event => {
+        setAnchorEl(event.currentTarget)
     }
     
-    render() {
-        return (
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    const handleClose = () => {
+        setAnchorEl(null)
+    }
+    
+    return (
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,15 +31,20 @@ class NavBar extends Component {
                             <a class="nav-link" href="#">Link</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-        </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+                            <a class="nav-link" href="#" aria-haspopup="true" onClick={handleClick}>
+                                <Close />
+                            </a>
+                            <Menu
+                                id="simple-menu"
+                                anchorEl={anchorEl}
+                                keepMounted
+                                open={Boolean(anchorEl)}
+                                onClose={handleClose}
+                            >
+                                <MenuItem onClick={handleClose}>Profile</MenuItem>
+                                <MenuItem onClick={handleClose}>My account</MenuItem>
+                                <MenuItem onClick={handleClose}>Logout</MenuItem>
+                            </Menu>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -45,8 +56,6 @@ class NavBar extends Component {
                     </form>
                 </div>
             </nav>
-        );
-    }
+    )
 }
 
-export default NavBar;
