@@ -1,10 +1,39 @@
 import React, { Component } from 'react';
-import { Search,  } from 'react-feather';
+import { Search, Power, PlusCircle } from 'react-feather';
+import { makeStyles } from '@material-ui/core/styles';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import Paper from "@material-ui/core/Paper";
+import InputBase from "@material-ui/core/InputBase";
+import Divider from "@material-ui/core/Divider";
+import IconButton from "@material-ui/core/IconButton";
+
+
+const useStyles = makeStyles(theme => ({
+    root: {
+        padding: '2px 4px',
+        display: 'flex',
+        alignItems: 'center',
+        width: 400,
+    },
+    input: {
+        marginLeft: theme.spacing(1),
+        flex: 1,
+    },
+    iconButton: {
+        color: '#550a46',
+        padding: 10,
+    },
+    divider: {
+        height: 28,
+        margin: 4,
+    },
+}));
 
 
 export default function NavBar() {
+    const classes = useStyles();
+    
     const [anchorEl, setAnchorEl] = React.useState(null)
     
     const handleClick = event => {
@@ -17,22 +46,57 @@ export default function NavBar() {
     
     return (
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <form action="">
+                    <Paper component="form" className={classes.root}>
+                        <InputBase
+                            className={classes.input}
+                            placeholder="Search Video Games"
+                            inputProps={{ 'aria-label': 'search videogames' }}
+                        />
+                        <Divider className={classes.divider} orientation="vertical" />
+                        <IconButton color="primary" className={classes.iconButton} aria-label="directions">
+                            <Search />
+                        </IconButton>
+                    </Paper>
+                </form>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <ul class="navbar-nav ml-auto">
+                        
+                        <li className="nav-item">
+                            <a href="" className="nav-link" data-toggle="modal" data-target="#exampleModal">
+                                <PlusCircle/>
+                            </a>
+
+                            <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog"
+                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div className="modal-dialog" role="document">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" className="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div className="modal-body">
+                                            ...
+                                        </div>
+                                        <div className="modal-footer">
+                                            <button type="button" className="btn btn-secondary"
+                                                    data-dismiss="modal">Close
+                                            </button>
+                                            <button type="button" className="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
+                        
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" aria-haspopup="true" onClick={handleClick}>
-                                <Close />
+                                <Power />
                             </a>
                             <Menu
                                 id="simple-menu"
@@ -41,19 +105,13 @@ export default function NavBar() {
                                 open={Boolean(anchorEl)}
                                 onClose={handleClose}
                             >
-                                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                                <MenuItem onClick={handleClose}>My account</MenuItem>
-                                <MenuItem onClick={handleClose}>Logout</MenuItem>
+                                <MenuItem onClick={handleClose}> Entrar </MenuItem>
+                                <MenuItem onClick={handleClose}> Nueva cuenta </MenuItem>
                             </Menu>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
+                        
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+                    
                 </div>
             </nav>
     )

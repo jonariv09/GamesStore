@@ -237,6 +237,7 @@
         <e p="src" t="Include">
           <e p="App.js" t="Include" />
           <e p="components" t="Include">
+            <e p="Modal.js" t="Include" />
             <e p="Structure" t="Include">
               <e p="NavBar.js" t="Include" />
             </e>
