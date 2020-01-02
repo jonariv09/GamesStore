@@ -2,7 +2,8 @@
   width: 220px;
   position: fixed;
   padding: 64px 0 0 0;
-  height: calc(100vh - 64px); }
+  height: calc(100vh - 64px);
+  overflow-y: auto; }
 
 .list-item {
   margin: 0;
@@ -12,5 +13,4 @@
   color: #550a46; }
 
 .presentation-card {
-  width: 220px;
-  padding-top: 100px; }
+  width: 220px; }

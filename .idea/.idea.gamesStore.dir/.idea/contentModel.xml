@@ -250,9 +250,11 @@
           <e p="index.js" t="Include" />
           <e p="registerServiceWorker.js" t="Include" />
           <e p="styles" t="Include">
+            <e p="LateralMenu.css" t="Include" />
             <e p="LateralMenu.scss" t="Include" />
             <e p="NavBar.css" t="Include" />
             <e p="NavBar.scss" t="Include" />
+            <e p="OverView.css" t="Include" />
             <e p="OverView.scss" t="Include" />
             <e p="styles.css" t="Include" />
             <e p="styles.scss" t="Include" />

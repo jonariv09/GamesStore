@@ -59,6 +59,21 @@ export default function LateralMenu() {
                     </ListItemIcon>
                     <ListItemText primary={"Settings"}/>
                 </ListItem>
+                
+                {
+                    [1, 2, 3, 4, 5, 6, 7].map((number, index) => (
+                        <ListItem key={number} button className={"list-item"}>
+                            <ListItemIcon>
+                                <a href="">
+                                    <User className={"icon-list-item"}/>
+                                </a>
+                            </ListItemIcon>
+                            <ListItemText primary={"Settings"}/>
+                        </ListItem>
+                    ))
+                    
+                }
+                
 
             </List>
 
