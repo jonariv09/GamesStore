@@ -7,6 +7,7 @@ import Paper from "@material-ui/core/Paper";
 import InputBase from "@material-ui/core/InputBase";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
+import '../../styles/NavBar.css'
 
 
 const useStyles = makeStyles(theme => ({
@@ -34,18 +35,21 @@ const useStyles = makeStyles(theme => ({
 export default function NavBar() {
     const classes = useStyles();
     
-    const [anchorEl, setAnchorEl] = React.useState(null)
+    const [anchorEl, setAnchorEl] = React.useState(null);
     
     const handleClick = event => {
         setAnchorEl(event.currentTarget)
-    }
+    };
     
     const handleClose = () => {
         setAnchorEl(null)
-    }
+    };
     
     return (
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-navbar fixed-top">
+
+                
+
                 <form action="">
                     <Paper component="form" className={classes.root}>
                         <InputBase
@@ -59,14 +63,14 @@ export default function NavBar() {
                         </IconButton>
                     </Paper>
                 </form>
-
+                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         
                         <li className="nav-item">
-                            <a href="" className="nav-link" data-toggle="modal" data-target="#exampleModal">
-                                <PlusCircle/>
-                            </a>
+                            {/*<a href="" className="nav-link" data-toggle="modal" data-target="#exampleModal">*/}
+                            {/*    <PlusCircle/>*/}
+                            {/*</a>*/}
 
                             <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog"
                                  aria-labelledby="exampleModalLabel" aria-hidden="true">

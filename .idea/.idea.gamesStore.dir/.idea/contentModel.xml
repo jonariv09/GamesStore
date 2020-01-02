@@ -238,22 +238,26 @@
           <e p="App.js" t="Include" />
           <e p="components" t="Include">
             <e p="Modal.js" t="Include" />
+            <e p="SkeletonStructure" t="Include">
+              <e p="VideoGamesSkeleton.js" t="Include" />
+            </e>
             <e p="Structure" t="Include">
+              <e p="LateralMenu.js" t="Include" />
               <e p="NavBar.js" t="Include" />
+              <e p="OverView.js" t="Include" />
             </e>
           </e>
           <e p="index.js" t="Include" />
           <e p="registerServiceWorker.js" t="Include" />
           <e p="styles" t="Include">
+            <e p="LateralMenu.scss" t="Include" />
             <e p="NavBar.css" t="Include" />
             <e p="NavBar.scss" t="Include" />
+            <e p="OverView.scss" t="Include" />
             <e p="styles.css" t="Include" />
             <e p="styles.scss" t="Include" />
           </e>
         </e>
-      </e>
-      <e p="Controllers" t="Include">
-        <e p="SampleDataController.cs" t="Include" />
       </e>
       <e p="Pages" t="Include">
         <e p="Error.cshtml" t="Include" />

@@ -18,6 +18,10 @@
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
     <Content Remove="$(SpaRoot)**" />
     <Content Include="ClientApp\src\components\Modal.js" />
+    <Content Include="ClientApp\src\components\SkeletonStructure\VideoGamesSkeleton.js" />
+    <Content Include="ClientApp\src\components\Structure\OverView.js" />
+    <Content Include="ClientApp\src\styles\LateralMenu.scss" />
+    <Content Include="ClientApp\src\styles\OverView.scss" />
     <None Remove="$(SpaRoot)**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
