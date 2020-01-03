@@ -5,6 +5,17 @@
   height: calc(100vh - 64px);
   overflow-y: auto; }
 
+.lateral-menu::-webkit-scrollbar {
+  width: 5px; }
+
+.lateral-menu::-webkit-scrollbar-track {
+  border-radius: 5px; }
+
+.lateral-menu::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 5px;
+  outline: 1px solid slategrey; }
+
 .list-item {
   margin: 0;
   padding: 0; }

@@ -5,7 +5,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from "@material-ui/core/ListItemIcon";
-import '../../styles/LateralMenu.css'
+import '../../styles/LateralMenu.css';
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import Avatar from "@material-ui/core/Avatar";
@@ -31,7 +31,7 @@ export default function LateralMenu() {
             className={"lateral-menu"}
             role="presentation"
         >
-            <List>
+            <List className={""}>
 
                 <ListItem button className={"list-item"}>
                     <ListItemIcon>
@@ -60,19 +60,19 @@ export default function LateralMenu() {
                     <ListItemText primary={"Settings"}/>
                 </ListItem>
                 
-                {
-                    [1, 2, 3, 4, 5, 6, 7].map((number, index) => (
-                        <ListItem key={number} button className={"list-item"}>
-                            <ListItemIcon>
-                                <a href="">
-                                    <User className={"icon-list-item"}/>
-                                </a>
-                            </ListItemIcon>
-                            <ListItemText primary={"Settings"}/>
-                        </ListItem>
-                    ))
-                    
-                }
+                {/*{*/}
+                {/*    [1, 2, 3, 4, 5].map((number, index) => (*/}
+                {/*        <ListItem key={number} button className={"list-item"}>*/}
+                {/*            <ListItemIcon>*/}
+                {/*                <a href="">*/}
+                {/*                    <User className={"icon-list-item"}/>*/}
+                {/*                </a>*/}
+                {/*            </ListItemIcon>*/}
+                {/*            <ListItemText primary={"Settings"}/>*/}
+                {/*        </ListItem>*/}
+                {/*    ))*/}
+                {/*    */}
+                {/*}*/}
                 
 
             </List>
