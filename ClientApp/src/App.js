@@ -10,7 +10,9 @@ export default class App extends Component {
 
     render() {
         return (
-            <Grid container>
+            <Grid container style={{
+                background: "#rgb(244, 246, 248)"
+            }}>
 
                 
                 <NavBar/>

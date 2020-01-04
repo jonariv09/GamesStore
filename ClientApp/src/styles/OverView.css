@@ -1,8 +1,23 @@
 .overview-root {
-  padding-top: 64px; }
+  padding-top: 70px; }
 
 .item-grid {
   padding: 20px 0; }
 
-.banner-overview {
-  height: 100vh; }
+.banner-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 4% 5% 0 0; }
+
+.letters-button {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center; }
+
+.name-enterprise {
+  font-size: 25px;
+  font-weight: 700; }

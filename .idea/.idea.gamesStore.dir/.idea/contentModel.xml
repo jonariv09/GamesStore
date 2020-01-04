@@ -247,6 +247,9 @@
               <e p="OverView.js" t="Include" />
             </e>
           </e>
+          <e p="images" t="Include">
+            <e p="banner-game.svg" t="Include" />
+          </e>
           <e p="index.js" t="Include" />
           <e p="registerServiceWorker.js" t="Include" />
           <e p="styles" t="Include">

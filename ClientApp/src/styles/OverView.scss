@@ -1,15 +1,41 @@
-//.root {
-//  background-color: rgb(244, 246, 248);
-//}
-
 .overview-root {
-  padding-top: 64px;
+  //background-color: ;
+  padding-top: 70px;
 }
 
 .item-grid {
   padding: 20px 0;
 }
 
-.banner-overview {
-  height: 100vh;
+.main-banner-game {
+  //height: 100vh;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 4% 5% 0 0;
+}
+
+.banner-game {
+  //background-image: url("../../src/images/banner-game.svg");
+  //background-size: 500px;
+  //background-position: calc(100% - 250px);
+  //background-repeat: no-repeat;
+  //height: 100vh;
+}
+
+.letters-button {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.name-enterprise {
+  font-size: 25px;
+  font-weight: 700;
 }
