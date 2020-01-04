@@ -1,5 +1,9 @@
 .overview-root {
-  padding-top: 70px; }
+  padding-top: 64px; }
+
+.background-overview {
+  background-color: #f4f6f8;
+  height: 100vh; }
 
 .item-grid {
   padding: 20px 0; }

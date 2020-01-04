@@ -1,14 +1,16 @@
+
+
 .overview-root {
-  //background-color: ;
-  padding-top: 70px;
+  padding-top: 64px;
+}
+
+.background-overview {
+  background-color: rgb(244, 246, 248);
+  height: 100vh;
 }
 
 .item-grid {
   padding: 20px 0;
-}
-
-.main-banner-game {
-  //height: 100vh;
 }
 
 .banner-container {
@@ -16,14 +18,6 @@
   justify-content: flex-end;
   align-items: flex-end;
   padding: 4% 5% 0 0;
-}
-
-.banner-game {
-  //background-image: url("../../src/images/banner-game.svg");
-  //background-size: 500px;
-  //background-position: calc(100% - 250px);
-  //background-repeat: no-repeat;
-  //height: 100vh;
 }
 
 .letters-button {

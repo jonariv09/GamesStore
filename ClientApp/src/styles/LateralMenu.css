@@ -2,7 +2,9 @@
   width: 220px;
   position: fixed;
   padding: 64px 0 0 0;
-  overflow-y: auto; }
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+  overflow-x: hidden; }
 
 .lateral-menu::-webkit-scrollbar {
   width: 5px; }
@@ -20,7 +22,7 @@
   padding: 0; }
 
 .icon-list-item {
-  color: #550a46; }
+  color: #938efe; }
 
 .presentation-card {
   width: 220px; }

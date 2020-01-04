@@ -60,7 +60,7 @@ export default function NavBar() {
                         />
                         <Divider className={classes.divider} orientation="vertical"/>
                         <IconButton color="primary" className={classes.iconButton} aria-label="directions">
-                            <Search/>
+                            <Search className={"icon-search"}/>
                         </IconButton>
                     </Paper>
                 </form>

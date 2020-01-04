@@ -1,10 +1,13 @@
 
+
+
 .lateral-menu {
   width: 220px;
   position: fixed;
   padding: 64px 0 0 0;
-  //height: calc(100vh - 64px);
+  height: calc(100vh - 64px);
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .lateral-menu::-webkit-scrollbar {
@@ -28,7 +31,7 @@
 }
 
 .icon-list-item {
-  color: #550a46;
+  color: rgb(147, 142, 254);
 }
 
 .presentation-card {

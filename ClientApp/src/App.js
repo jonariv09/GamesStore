@@ -3,6 +3,7 @@ import NavBar from './components/Structure/NavBar';
 import LateralMenu from "./components/Structure/LateralMenu";
 import OverView from './components/Structure/OverView'
 import Grid from "@material-ui/core/Grid";
+import VideoGames from "./components/Structure/VideoGames";
 
 
 export default class App extends Component {
@@ -19,7 +20,10 @@ export default class App extends Component {
 
                 <LateralMenu/>
 
-                <OverView/>
+                {/*<OverView/>*/}
+                
+                <VideoGames />
+                
             </Grid>
         );
     }

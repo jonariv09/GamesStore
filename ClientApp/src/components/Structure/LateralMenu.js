@@ -63,7 +63,6 @@ export default function LateralMenu() {
 
             <div
                 className={"lateral-menu"}
-                role="presentation"
             >
                 <List className={""}>
 
@@ -108,6 +107,8 @@ export default function LateralMenu() {
                     {/*    */}
                     {/*}*/}
                     
+                    
+                    
                 </List>
 
                 <Card className={"presentation-card fixed-bottom"}>
@@ -135,6 +136,7 @@ export default function LateralMenu() {
                         />
                     </Card>
                 </Card>
+                
 
             </div>
 
