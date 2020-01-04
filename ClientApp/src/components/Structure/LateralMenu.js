@@ -1,6 +1,6 @@
 import React from 'react';
 import {Home, Monitor, User} from 'react-feather'
-import {makeStyles, createMuiTheme, ThemeProvider} from '@material-ui/core/styles';
+import {makeStyles, createMuiTheme, ThemeProvider, withStyles} from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -12,7 +12,37 @@ import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Grid from "@material-ui/core/Grid";
+import Badge from "@material-ui/core/Badge/Badge";
 
+
+const StyledBadge = withStyles(theme => ({
+    badge: {
+        backgroundColor: '#44b700',
+        color: '#44b700',
+        boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
+        '&::after': {
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            borderRadius: '50%',
+            animation: '$ripple 1.2s infinite ease-in-out',
+            border: '1px solid currentColor',
+            content: '""',
+        },
+    },
+    '@keyframes ripple': {
+        '0%': {
+            transform: 'scale(.8)',
+            opacity: 1,
+        },
+        '100%': {
+            transform: 'scale(2.4)',
+            opacity: 0,
+        },
+    },
+}))(Badge);
 
 const theme = createMuiTheme({
     typography: {
@@ -63,7 +93,7 @@ export default function LateralMenu() {
                         </ListItemIcon>
                         <ListItemText primary={"Settings"}/>
                     </ListItem>
-
+                    
                     {/*{*/}
                     {/*    [1, 2, 3, 4, 5].map((number, index) => (*/}
                     {/*        <ListItem key={number} button className={"list-item"}>*/}
@@ -77,17 +107,23 @@ export default function LateralMenu() {
                     {/*    ))*/}
                     {/*    */}
                     {/*}*/}
-
-
+                    
                 </List>
 
                 <Card className={"presentation-card fixed-bottom"}>
                     <Card>
                         <CardHeader
                             avatar={
-                                <Avatar aria-label="recipe">
-                                    R
-                                </Avatar>
+                                <StyledBadge
+                                    overlap="circle"
+                                    anchorOrigin={{
+                                        vertical: 'bottom',
+                                        horizontal: 'right',
+                                    }}
+                                    variant="dot"
+                                >
+                                    <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg"/>
+                                </StyledBadge>
                             }
                             action={
                                 <IconButton aria-label="settings">
