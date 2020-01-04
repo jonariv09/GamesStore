@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Search, Power, PlusCircle } from 'react-feather';
-import { makeStyles } from '@material-ui/core/styles';
+import React, {Component} from 'react';
+import {Search, Power, PlusCircle} from 'react-feather';
+import {makeStyles} from '@material-ui/core/styles';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Paper from "@material-ui/core/Paper";
@@ -8,6 +8,7 @@ import InputBase from "@material-ui/core/InputBase";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import '../../styles/NavBar.css'
+import Grid from "@material-ui/core/Grid";
 
 
 const useStyles = makeStyles(theme => ({
@@ -34,39 +35,39 @@ const useStyles = makeStyles(theme => ({
 
 export default function NavBar() {
     const classes = useStyles();
-    
+
     const [anchorEl, setAnchorEl] = React.useState(null);
-    
+
     const handleClick = event => {
         setAnchorEl(event.currentTarget)
     };
-    
+
     const handleClose = () => {
         setAnchorEl(null)
     };
-    
-    return (
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-navbar fixed-top">
 
-                
+    return (
+        <Grid item xs={12}>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark main-navbar fixed-top">
+
 
                 <form action="">
                     <Paper component="form" className={classes.root}>
                         <InputBase
                             className={classes.input}
                             placeholder="Search Video Games"
-                            inputProps={{ 'aria-label': 'search videogames' }}
+                            inputProps={{'aria-label': 'search videogames'}}
                         />
-                        <Divider className={classes.divider} orientation="vertical" />
+                        <Divider className={classes.divider} orientation="vertical"/>
                         <IconButton color="primary" className={classes.iconButton} aria-label="directions">
-                            <Search />
+                            <Search/>
                         </IconButton>
                     </Paper>
                 </form>
-                
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        
+
                         <li className="nav-item">
                             {/*<a href="" className="nav-link" data-toggle="modal" data-target="#exampleModal">*/}
                             {/*    <PlusCircle/>*/}
@@ -95,12 +96,12 @@ export default function NavBar() {
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </li>
-                        
+
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" aria-haspopup="true" onClick={handleClick}>
-                                <Power />
+                                <Power/>
                             </a>
                             <Menu
                                 id="simple-menu"
@@ -113,11 +114,12 @@ export default function NavBar() {
                                 <MenuItem onClick={handleClose}> Nueva cuenta </MenuItem>
                             </Menu>
                         </li>
-                        
+
                     </ul>
-                    
+
                 </div>
             </nav>
+        </Grid>
     )
 }
 

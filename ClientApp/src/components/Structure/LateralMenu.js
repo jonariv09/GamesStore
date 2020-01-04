@@ -11,6 +11,7 @@ import CardHeader from "@material-ui/core/CardHeader";
 import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import Grid from "@material-ui/core/Grid";
 
 
 const theme = createMuiTheme({
@@ -24,90 +25,90 @@ const themeSpacing = createMuiTheme({
 });
 
 export default function LateralMenu() {
-    
+
     const sideList = side => (
 
-        <div
-            className={"lateral-menu"}
-            role="presentation"
-        >
-            <List className={""}>
+        <Grid item xs={"2"}>
 
-                <ListItem button className={"list-item"}>
-                    <ListItemIcon>
-                        <a href="">
-                            <Home className={"icon-list-item"}/>
-                        </a>
-                    </ListItemIcon>
-                    <ListItemText primary={"Overview"}/>
-                </ListItem>
 
-                <ListItem button className={"list-item"}>
-                    <ListItemIcon>
-                        <a href="">
-                            <Monitor className={"icon-list-item"}/>
-                        </a>
-                    </ListItemIcon>
-                    <ListItemText primary={"Video Games"}/>
-                </ListItem>
+            <div
+                className={"lateral-menu"}
+                role="presentation"
+            >
+                <List className={""}>
 
-                <ListItem button className={"list-item"}>
-                    <ListItemIcon>
-                        <a href="">
-                            <User className={"icon-list-item"}/>
-                        </a>
-                    </ListItemIcon>
-                    <ListItemText primary={"Settings"}/>
-                </ListItem>
-                
-                {/*{*/}
-                {/*    [1, 2, 3, 4, 5].map((number, index) => (*/}
-                {/*        <ListItem key={number} button className={"list-item"}>*/}
-                {/*            <ListItemIcon>*/}
-                {/*                <a href="">*/}
-                {/*                    <User className={"icon-list-item"}/>*/}
-                {/*                </a>*/}
-                {/*            </ListItemIcon>*/}
-                {/*            <ListItemText primary={"Settings"}/>*/}
-                {/*        </ListItem>*/}
-                {/*    ))*/}
-                {/*    */}
-                {/*}*/}
-                
+                    <ListItem button className={"list-item"}>
+                        <ListItemIcon>
+                            <a href="">
+                                <Home className={"icon-list-item"}/>
+                            </a>
+                        </ListItemIcon>
+                        <ListItemText primary={"Overview"}/>
+                    </ListItem>
 
-            </List>
+                    <ListItem button className={"list-item"}>
+                        <ListItemIcon>
+                            <a href="">
+                                <Monitor className={"icon-list-item"}/>
+                            </a>
+                        </ListItemIcon>
+                        <ListItemText primary={"Video Games"}/>
+                    </ListItem>
 
-            <Card className={"presentation-card fixed-bottom"}>
-                <Card>
-                    <CardHeader
-                        avatar={
-                            <Avatar aria-label="recipe" >
-                                R
-                            </Avatar>
-                        }
-                        action={
-                            <IconButton aria-label="settings">
-                                <MoreVertIcon/>
-                            </IconButton>
-                        }
-                        title="Jose Agustin"
-                        subheader="IntelliOpen's CEO"
-                    />
+                    <ListItem button className={"list-item"}>
+                        <ListItemIcon>
+                            <a href="">
+                                <User className={"icon-list-item"}/>
+                            </a>
+                        </ListItemIcon>
+                        <ListItemText primary={"Settings"}/>
+                    </ListItem>
+
+                    {/*{*/}
+                    {/*    [1, 2, 3, 4, 5].map((number, index) => (*/}
+                    {/*        <ListItem key={number} button className={"list-item"}>*/}
+                    {/*            <ListItemIcon>*/}
+                    {/*                <a href="">*/}
+                    {/*                    <User className={"icon-list-item"}/>*/}
+                    {/*                </a>*/}
+                    {/*            </ListItemIcon>*/}
+                    {/*            <ListItemText primary={"Settings"}/>*/}
+                    {/*        </ListItem>*/}
+                    {/*    ))*/}
+                    {/*    */}
+                    {/*}*/}
+
+
+                </List>
+
+                <Card className={"presentation-card fixed-bottom"}>
+                    <Card>
+                        <CardHeader
+                            avatar={
+                                <Avatar aria-label="recipe">
+                                    R
+                                </Avatar>
+                            }
+                            action={
+                                <IconButton aria-label="settings">
+                                    <MoreVertIcon/>
+                                </IconButton>
+                            }
+                            title="Jose Agustin"
+                            subheader="IntelliOpen's CEO"
+                        />
+                    </Card>
                 </Card>
-            </Card>
 
-        </div>
+            </div>
 
+        </Grid>
     );
 
 
     return (
-        <div>
-
-            <ThemeProvider theme={theme}>
-                {sideList('left')}
-            </ThemeProvider>
-
-        </div>
+        <ThemeProvider theme={theme}>
+            {sideList('left')}
+        </ThemeProvider>
     )
 }

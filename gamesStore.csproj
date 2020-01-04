@@ -20,10 +20,22 @@
     <Content Include="ClientApp\src\components\Modal.js" />
     <Content Include="ClientApp\src\components\SkeletonStructure\VideoGamesSkeleton.js" />
     <Content Include="ClientApp\src\components\Structure\OverView.js" />
+    <Content Include="ClientApp\src\components\test\CSSGrid.js" />
+    <Content Include="ClientApp\src\components\test\nav.js" />
     <Content Include="ClientApp\src\styles\LateralMenu.scss" />
     <Content Include="ClientApp\src\styles\OverView.scss" />
     <None Remove="$(SpaRoot)**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+    <None Remove="ClientApp\src\components\test\**" />
+    <Content Remove="ClientApp\src\components\test\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ClientApp\src\components\test\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="ClientApp\src\components\test\**" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
