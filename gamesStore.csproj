@@ -19,6 +19,7 @@
     <Content Remove="$(SpaRoot)**" />
     <Content Include="ClientApp\src\components\Modal.js" />
     <Content Include="ClientApp\src\components\SkeletonStructure\VideoGamesSkeleton.js" />
+    <Content Include="ClientApp\src\components\Structure\CreationForm.js" />
     <Content Include="ClientApp\src\components\Structure\InternalComponents\VideoGameCard.js" />
     <Content Include="ClientApp\src\components\Structure\OverView.js" />
     <Content Include="ClientApp\src\components\Structure\VideoGames.js" />
@@ -26,6 +27,7 @@
     <Content Include="ClientApp\src\components\test\nav.js" />
     <Content Include="ClientApp\src\images\banner-game.svg" />
     <Content Include="ClientApp\src\images\mario-striker.jpg" />
+    <Content Include="ClientApp\src\styles\CreationForm.scss" />
     <Content Include="ClientApp\src\styles\InternalComponents\VideoGameCard.scss" />
     <Content Include="ClientApp\src\styles\LateralMenu.scss" />
     <Content Include="ClientApp\src\styles\OverView.scss" />
