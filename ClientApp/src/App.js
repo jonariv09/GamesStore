@@ -12,7 +12,12 @@ export default class App extends Component {
 
     render() {
         return (
+<<<<<<< HEAD
             Grid
+=======
+            
+            
+>>>>>>> d8611696461c0e89cb1c64c2759f431088d15ade
             
             
             {/*<Grid container>*/}
