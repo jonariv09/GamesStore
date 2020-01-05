@@ -4,6 +4,11 @@ import '../../styles/VideoGames.css'
 import VideoGameCard from "./InternalComponents/VideoGameCard";
 import Button from "@material-ui/core/Button";
 import {Plus} from 'react-feather'
+import NavLink from "react-router-dom/NavLink";
+import {Link} from "react-router-dom";
+import CreationForm from "./CreationForm";
+import Route from "react-router-dom/Route";
+import '../../styles/styles.css'
 
 export default function VideoGames() {
 
@@ -11,18 +16,25 @@ export default function VideoGames() {
 
         <Grid item xs={10} container justify={"center"} className={"videogames-root"}>
 
+           
+
             <Grid item xs={11}>
 
                 <Grid container justify={"center"}>
                     <Grid item xs={12}>
 
-                        <Button
-                            variant="contained"
-                            color={"secondary"}
-                            startIcon={<Plus/>}
-                        >
-                            New game
-                        </Button>
+                        <Link to={"/create-videogame"} style={{
+                            textDecoration: "none"
+                        }}>
+                            <Button
+                                variant="contained"
+                                color={"secondary"}
+                                startIcon={<Plus/>}
+                            >
+                                New game
+                            </Button>
+
+                        </Link>
 
                         <Grid container spacing={2} className={"container-videogames"}>
 
@@ -38,6 +50,7 @@ export default function VideoGames() {
                     </Grid>
                 </Grid>
             </Grid>
+
         </Grid>
     )
 

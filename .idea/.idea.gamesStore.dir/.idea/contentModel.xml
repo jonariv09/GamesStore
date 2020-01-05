@@ -247,6 +247,7 @@
                 <e p="VideoGameCard.js" t="Include" />
               </e>
               <e p="LateralMenu.js" t="Include" />
+              <e p="Layout.js" t="Include" />
               <e p="NavBar.js" t="Include" />
               <e p="OverView.js" t="Include" />
               <e p="VideoGames.js" t="Include" />

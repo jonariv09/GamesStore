@@ -13,6 +13,8 @@ import IconButton from "@material-ui/core/IconButton";
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Grid from "@material-ui/core/Grid";
 import Badge from "@material-ui/core/Badge/Badge";
+import Link from "react-router-dom/Link";
+import '../../styles/styles.css'
 
 
 const StyledBadge = withStyles(theme => ({
@@ -44,11 +46,11 @@ const StyledBadge = withStyles(theme => ({
     },
 }))(Badge);
 
-const theme = createMuiTheme({
-    typography: {
-        fontSize: 13
-    }
-});
+// const theme = createMuiTheme({
+//     typography: {
+//         fontSize: 13
+//     }
+// });
 
 const themeSpacing = createMuiTheme({
     spacing: 0
@@ -66,33 +68,41 @@ export default function LateralMenu() {
             >
                 <List className={""}>
 
-                    <ListItem button className={"list-item"}>
-                        <ListItemIcon>
-                            <a href="">
-                                <Home className={"icon-list-item"}/>
-                            </a>
-                        </ListItemIcon>
-                        <ListItemText primary={"Overview"}/>
-                    </ListItem>
+                    <Link to={"/overview"} style={{
+                        textDecoration: "none",
+                        color: "#222831"
+                    }}>
+                        <ListItem button className={"list-item"}>
+                            <ListItemIcon>
+                                <a href="">
+                                    <Home className={"icon-list-item"}/>
+                                </a>
+                            </ListItemIcon>
+                            <ListItemText primary={"Overview"} className={"item-text-lateral"}/>
+                        </ListItem>
+                    </Link>
 
-                    <ListItem button className={"list-item"}>
-                        <ListItemIcon>
-                            <a href="">
+                    <Link to={"/videogames"} style={{
+                        textDecoration: "none",
+                        color: "#222831"
+                    }}>
+                        <ListItem button className={"list-item"}>
+                            <ListItemIcon>
                                 <Monitor className={"icon-list-item"}/>
-                            </a>
-                        </ListItemIcon>
-                        <ListItemText primary={"Video Games"}/>
-                    </ListItem>
+                            </ListItemIcon>
+                            <ListItemText primary={"Video Games"} className={"item-text-lateral"}/>
+                        </ListItem>
+                    </Link>
 
-                    <ListItem button className={"list-item"}>
-                        <ListItemIcon>
-                            <a href="">
-                                <User className={"icon-list-item"}/>
-                            </a>
-                        </ListItemIcon>
-                        <ListItemText primary={"Settings"}/>
-                    </ListItem>
-                    
+                    {/*<ListItem button className={"list-item"}>*/}
+                    {/*    <ListItemIcon>*/}
+                    {/*        <a href="">*/}
+                    {/*            <User className={"icon-list-item"}/>*/}
+                    {/*        </a>*/}
+                    {/*    </ListItemIcon>*/}
+                    {/*    <ListItemText primary={"Settings"}/>*/}
+                    {/*</ListItem>*/}
+
                     {/*{*/}
                     {/*    [1, 2, 3, 4, 5].map((number, index) => (*/}
                     {/*        <ListItem key={number} button className={"list-item"}>*/}
@@ -106,9 +116,8 @@ export default function LateralMenu() {
                     {/*    ))*/}
                     {/*    */}
                     {/*}*/}
-                    
-                    
-                    
+
+
                 </List>
 
                 <Card className={"presentation-card fixed-bottom"}>
@@ -136,7 +145,7 @@ export default function LateralMenu() {
                         />
                     </Card>
                 </Card>
-                
+
 
             </div>
 
@@ -145,7 +154,7 @@ export default function LateralMenu() {
 
 
     return (
-        <ThemeProvider theme={theme}>
+        <ThemeProvider>
             {sideList('left')}
         </ThemeProvider>
     )

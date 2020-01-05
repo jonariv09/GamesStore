@@ -6,9 +6,9 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import {Trash, Edit, Heart} from 'react-feather'
+import {Trash, Edit, Heart} from 'react-feather';
 
-import '../../../styles/InternalComponents/VideoGameCard.css'
+import '../../../styles/InternalComponents/VideoGameCard.css';
 import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
 import videoGame from "../../../images/mario-striker.jpg";

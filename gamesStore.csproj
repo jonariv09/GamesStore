@@ -21,6 +21,7 @@
     <Content Include="ClientApp\src\components\SkeletonStructure\VideoGamesSkeleton.js" />
     <Content Include="ClientApp\src\components\Structure\CreationForm.js" />
     <Content Include="ClientApp\src\components\Structure\InternalComponents\VideoGameCard.js" />
+    <Content Include="ClientApp\src\components\Structure\Layout.js" />
     <Content Include="ClientApp\src\components\Structure\OverView.js" />
     <Content Include="ClientApp\src\components\Structure\VideoGames.js" />
     <Content Include="ClientApp\src\components\test\CSSGrid.js" />

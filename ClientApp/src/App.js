@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
-import NavBar from './components/Structure/NavBar';
-import LateralMenu from "./components/Structure/LateralMenu";
 import OverView from './components/Structure/OverView'
-import Grid from "@material-ui/core/Grid";
 import VideoGames from "./components/Structure/VideoGames";
 import CreationForm from "./components/Structure/CreationForm";
+import Route from "react-router-dom/Route";
+import Layout from "./components/Structure/Layout";
+import Grid from "@material-ui/core/Grid";
+
 
 
 export default class App extends Component {
@@ -12,26 +13,30 @@ export default class App extends Component {
 
     render() {
         return (
-<<<<<<< HEAD
-            Grid
-=======
-            
-            
->>>>>>> d8611696461c0e89cb1c64c2759f431088d15ade
-            
-            
-            {/*<Grid container>*/}
-            {/*    */}
-            {/*    <NavBar/>*/}
-            
-            {/*    <LateralMenu/>*/}
-            
-            {/*    <OverView/>*/}
-            {/*    */}
-            {/*    <VideoGames />*/}
-            {/*    */}
-            {/*    <CreationForm />*/}
-            {/*</Grid>*/}
+            <Layout>
+                
+                <Route exact path={"/"} component={OverView}/>
+                <Route path={"/overview"} component={OverView}/>
+                <Route path={"/videoGames"} component={VideoGames} />
+                <Route path={"/create-videogame"} component={CreationForm} />
+                
+                {/*<Grid container>*/}
+                {/*    */}
+                {/*    <NavBar/>*/}
+                
+                {/*    <LateralMenu/>*/}
+                
+                {/*    <OverView/>*/}
+                {/*    */}
+                {/*    <VideoGames />*/}
+                {/*    */}
+                {/*    <CreationForm />*/}
+                {/*</Grid>*/}
+
+            </Layout>
+
+
         );
     }
 }
+

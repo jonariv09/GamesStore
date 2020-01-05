@@ -1,6 +1,5 @@
 import React from "react";
 import './../../styles/CreationForm.css'
-import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
 import {AlignCenter, Navigation, Sidebar} from "react-feather";
 
