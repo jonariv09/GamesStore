@@ -5,14 +5,13 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import {Trash, Edit, Heart} from 'react-feather'
 
 import '../../../styles/InternalComponents/VideoGameCard.css'
 import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
-import videoGame from "./../../../images/mario-striker.jpg"
+import videoGame from "../../../images/mario-striker.jpg";
 
 const useStyles = makeStyles({
     card: {
@@ -25,30 +24,30 @@ export default function VideoGameCard() {
 
     function handleDeleteVideoGame() {
         console.log("to delete")
-        
+
     }
-    
+
     function handleEditVideoGame() {
         console.log('to edit')
     }
 
     return (
         <Card className={classes.card}>
+
             <CardActionArea>
                 <CardMedia
                     component="img"
                     alt="VideoGame"
                     height="140"
-                    image="./../../../images/mario-striker.jpg"
+                    image={videoGame}
                     title="VideoGame"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        Lizard
+                        Mario Striker
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                        across all continents except Antarctica
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, repudiandae.
                     </Typography>
                 </CardContent>
             </CardActionArea>
@@ -67,6 +66,7 @@ export default function VideoGameCard() {
                 </Grid>
 
             </CardActions>
+
         </Card>
     );
 }

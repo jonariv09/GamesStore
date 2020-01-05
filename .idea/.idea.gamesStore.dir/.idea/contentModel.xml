@@ -242,6 +242,7 @@
               <e p="VideoGamesSkeleton.js" t="Include" />
             </e>
             <e p="Structure" t="Include">
+              <e p="CreationForm.js" t="Include" />
               <e p="InternalComponents" t="Include">
                 <e p="VideoGameCard.js" t="Include" />
               </e>
@@ -258,7 +259,10 @@
           <e p="index.js" t="Include" />
           <e p="registerServiceWorker.js" t="Include" />
           <e p="styles" t="Include">
+            <e p="CreationForm.css" t="Include" />
+            <e p="CreationForm.scss" t="Include" />
             <e p="InternalComponents" t="Include">
+              <e p="VideoGameCard.css" t="Include" />
               <e p="VideoGameCard.scss" t="Include" />
             </e>
             <e p="LateralMenu.css" t="Include" />
@@ -267,6 +271,7 @@
             <e p="NavBar.scss" t="Include" />
             <e p="OverView.css" t="Include" />
             <e p="OverView.scss" t="Include" />
+            <e p="VideoGames.css" t="Include" />
             <e p="VideoGames.scss" t="Include" />
             <e p="styles.css" t="Include" />
             <e p="styles.scss" t="Include" />

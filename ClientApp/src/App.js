@@ -4,6 +4,7 @@ import LateralMenu from "./components/Structure/LateralMenu";
 import OverView from './components/Structure/OverView'
 import Grid from "@material-ui/core/Grid";
 import VideoGames from "./components/Structure/VideoGames";
+import CreationForm from "./components/Structure/CreationForm";
 
 
 export default class App extends Component {
@@ -11,20 +12,22 @@ export default class App extends Component {
 
     render() {
         return (
-            <Grid container style={{
-                background: "#rgb(244, 246, 248)"
-            }}>
-
-                
-                <NavBar/>
-
-                <LateralMenu/>
-
-                {/*<OverView/>*/}
-                
-                <VideoGames />
-                
-            </Grid>
+            
+            
+            
+            
+            {/*<Grid container>*/}
+            {/*    */}
+            {/*    <NavBar/>*/}
+            
+            {/*    <LateralMenu/>*/}
+            
+            {/*    <OverView/>*/}
+            {/*    */}
+            {/*    <VideoGames />*/}
+            {/*    */}
+            {/*    <CreationForm />*/}
+            {/*</Grid>*/}
         );
     }
 }
