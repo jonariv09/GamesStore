@@ -14,25 +14,10 @@ export default class App extends Component {
     render() {
         return (
             <Layout>
-                
                 <Route exact path={"/"} component={OverView}/>
                 <Route path={"/overview"} component={OverView}/>
                 <Route path={"/videoGames"} component={VideoGames} />
                 <Route path={"/create-videogame"} component={CreationForm} />
-                
-                {/*<Grid container>*/}
-                {/*    */}
-                {/*    <NavBar/>*/}
-                
-                {/*    <LateralMenu/>*/}
-                
-                {/*    <OverView/>*/}
-                {/*    */}
-                {/*    <VideoGames />*/}
-                {/*    */}
-                {/*    <CreationForm />*/}
-                {/*</Grid>*/}
-
             </Layout>
 
 

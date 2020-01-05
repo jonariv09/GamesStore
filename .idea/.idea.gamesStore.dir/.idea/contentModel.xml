@@ -279,6 +279,17 @@
           </e>
         </e>
       </e>
+      <e p="Controllers" t="Include">
+        <e p="ApplicationDbContext.cs" t="Include" />
+      </e>
+      <e p="Migrations" t="Include">
+        <e p="20200105173829_FirstMigration.Designer.cs" t="Include" />
+        <e p="20200105173829_FirstMigration.cs" t="Include" />
+        <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
+      </e>
+      <e p="Models" t="Include">
+        <e p="VideoGame.cs" t="Include" />
+      </e>
       <e p="Pages" t="Include">
         <e p="Error.cshtml" t="Include" />
         <e p="Error.cshtml.cs" t="Include" />
