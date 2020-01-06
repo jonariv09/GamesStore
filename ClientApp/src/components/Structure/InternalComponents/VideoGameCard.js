@@ -7,47 +7,46 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import {Trash, Edit, Heart} from 'react-feather';
-
 import '../../../styles/InternalComponents/VideoGameCard.css';
 import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
 import videoGame from "../../../images/mario-striker.jpg";
+import Chip from "@material-ui/core/Chip";
+import DoneIcon from '@material-ui/icons/Done';
 
 const useStyles = makeStyles({
     card: {
         width: 250,
-    },
+    }
 });
 
-export default function VideoGameCard() {
+export default function VideoGameCard(props) {
     const classes = useStyles();
-
+    
     function handleDeleteVideoGame() {
-        console.log("to delete")
-
+        console.log(props.name, props.description);
     }
-
+    
     function handleEditVideoGame() {
         console.log('to edit')
     }
-
+    
     return (
-        <Card className={classes.card}>
-
+        <Card className={classes.card} >
             <CardActionArea>
                 <CardMedia
                     component="img"
                     alt="VideoGame"
-                    height="140"
                     image={videoGame}
                     title="VideoGame"
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        Mario Striker
+                    <Typography gutterBottom variant="subtitle1">
+                        { props.name }
                     </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, repudiandae.
+                    <Chip label={props.genre} deleteIcon={<DoneIcon />} />
+                    <Typography variant="body2" color="textSecondary">
+                        { props.description }
                     </Typography>
                 </CardContent>
             </CardActionArea>

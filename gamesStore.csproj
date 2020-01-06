@@ -20,7 +20,7 @@
     <Content Remove="$(SpaRoot)**" />
     <Content Include="ClientApp\src\components\Modal.js" />
     <Content Include="ClientApp\src\components\SkeletonStructure\VideoGamesSkeleton.js" />
-    <Content Include="ClientApp\src\components\Structure\CreationForm.js" />
+    <Content Include="ClientApp\src\components\Structure\CreationEditForm.js" />
     <Content Include="ClientApp\src\components\Structure\InternalComponents\VideoGameCard.js" />
     <Content Include="ClientApp\src\components\Structure\Layout.js" />
     <Content Include="ClientApp\src\components\Structure\OverView.js" />

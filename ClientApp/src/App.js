@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import OverView from './components/Structure/OverView'
 import VideoGames from "./components/Structure/VideoGames";
-import CreationForm from "./components/Structure/CreationForm";
 import Route from "react-router-dom/Route";
 import Layout from "./components/Structure/Layout";
 import Grid from "@material-ui/core/Grid";
+import CreationEditForm from "./components/Structure/CreationEditForm";
 
 
 
@@ -17,7 +17,7 @@ export default class App extends Component {
                 <Route exact path={"/"} component={OverView}/>
                 <Route path={"/overview"} component={OverView}/>
                 <Route path={"/videoGames"} component={VideoGames} />
-                <Route path={"/create-videogame"} component={CreationForm} />
+                <Route path={"/create-videogame"} component={CreationEditForm} />
             </Layout>
 
 

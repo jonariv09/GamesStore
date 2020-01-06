@@ -51,7 +51,6 @@ export default function NavBar() {
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark main-navbar fixed-top">
 
 
-                <form action="">
                     <Paper component="form" className={classes.root}>
                         <InputBase
                             className={classes.input}
@@ -63,12 +62,11 @@ export default function NavBar() {
                             <Search className={"icon-search"}/>
                         </IconButton>
                     </Paper>
-                </form>
                 
                 
                 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav ml-auto">
 
                         <li className="nav-item">
                             {/*<a href="" className="nav-link" data-toggle="modal" data-target="#exampleModal">*/}
@@ -101,8 +99,8 @@ export default function NavBar() {
 
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" aria-haspopup="true" onClick={handleClick}>
+                        <li className="nav-item dropdown">
+                            <a className="nav-link" href="#" aria-haspopup="true" onClick={handleClick}>
                                 <Power/>
                             </a>
                             <Menu

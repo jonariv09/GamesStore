@@ -1,57 +1,68 @@
-import React from "react";
+import React, {Component} from "react";
 import Grid from "@material-ui/core/Grid";
 import '../../styles/VideoGames.css'
 import VideoGameCard from "./InternalComponents/VideoGameCard";
 import Button from "@material-ui/core/Button";
 import {Plus} from 'react-feather'
-import NavLink from "react-router-dom/NavLink";
 import {Link} from "react-router-dom";
-import CreationForm from "./CreationForm";
-import Route from "react-router-dom/Route";
 import '../../styles/styles.css'
 
-export default function VideoGames() {
+export default class VideoGames extends Component {
+    constructor(props) {
+        super(props);
 
-    return (
+        this.state = {videoGamesList: []};
 
-        <Grid item xs={10} container justify={"center"} className={"videogames-root"}>
+        fetch('api/ListGames')
+            .then(response => response.json())
+            .then(game => {
+                this.setState({videoGamesList: game})
+            })
+    }
+    
+    render() {
+        
+        return (
+            
+            <Grid item xs={10} container justify={"center"} className={"videogames-root"}>
 
-           
 
-            <Grid item xs={11}>
+                <Grid item xs={11}>
 
-                <Grid container justify={"center"}>
-                    <Grid item xs={12}>
+                    <Grid container justify={"center"}>
+                        <Grid item xs={12}>
 
-                        <Link to={"/create-videogame"} style={{
-                            textDecoration: "none"
-                        }}>
-                            <Button
-                                variant="contained"
-                                color={"secondary"}
-                                startIcon={<Plus/>}
-                            >
-                                New game
-                            </Button>
+                            <Link to={"/create-videogame"} style={{
+                                textDecoration: "none"
+                            }}>
+                                <Button
+                                    variant="contained"
+                                    color={"secondary"}
+                                    startIcon={<Plus/>}
+                                >
+                                    New game
+                                </Button>
 
-                        </Link>
+                            </Link>
 
-                        <Grid container spacing={2} className={"container-videogames"}>
+                            <Grid container spacing={2} className={"container-videogames"}>
 
-                            {
-                                [1, 2, 3, 4, 5, 6].map((number, index) => (
-                                    <Grid item xs={3}>
-                                        <VideoGameCard/>
-                                    </Grid>
-                                ))
-                            }
+                                {
+                                    this.state.videoGamesList.map((game, index) => (
+                                        <Grid item xs={3} key={index}>
+                                            <VideoGameCard name={game.name} description={game.description}
+                                                           genre={game.genre}/>
+                                        </Grid>
+                                    ))
+                                }
 
+                            </Grid>
                         </Grid>
                     </Grid>
                 </Grid>
+
             </Grid>
+        )
 
-        </Grid>
-    )
-
+    }
 }
