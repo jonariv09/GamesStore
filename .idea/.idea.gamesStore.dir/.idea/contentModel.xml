@@ -237,7 +237,6 @@
         <e p="src" t="Include">
           <e p="App.js" t="Include" />
           <e p="components" t="Include">
-            <e p="Modal.js" t="Include" />
             <e p="SkeletonStructure" t="Include">
               <e p="VideoGamesSkeleton.js" t="Include" />
             </e>

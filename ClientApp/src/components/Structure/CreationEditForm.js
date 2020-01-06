@@ -16,9 +16,19 @@ export default class CreationEditForm extends Component {
                 genre: ''
             }
         };
-
+        
         this.handleSubmitCreate = this.handleSubmitCreate.bind(this);
         this.handleInputTareaChange = this.handleInputTareaChange.bind(this);
+    }
+    
+    componentDidMount() {
+        this.setState({
+            game: {
+                name: this.props.name,
+                description: this.props.description,
+                genre: this.props.genre
+            }
+        })
     }
 
 
@@ -38,16 +48,16 @@ export default class CreationEditForm extends Component {
                 
                 this.setState({
                     game: {
+                        id: null,
                         name: "",
                         description: "",
                         genre: ""
                     }
                 })
-                
+
             })
     }
-
-
+    
     handleInputTareaChange(event) {
         const target = event.target;
         const value = target.type === 'checkbox' ? target.checked : target.value;
@@ -72,9 +82,12 @@ export default class CreationEditForm extends Component {
                     <div className={"row justify-content-center align-items-center container-row-form"}>
 
                         <div className={"col-4"}>
+                           
+
                             <form className={"form mt-5"} onSubmit={this.handleSubmitCreate}>
 
-                                <input type="number" name={"id"} hidden/>
+
+                                <input type="number" name={"id"} value={this.state.game.id} hidden/>
                                 <p className={"lead h3"}> New game </p>
 
                                 <small className="form-text text-muted"> Name </small>

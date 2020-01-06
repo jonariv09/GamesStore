@@ -55,7 +55,9 @@ export default function LateralMenu() {
 
     const sideList = side => (
 
-        <Grid item xs={2}>
+        <Grid item xs={2} style={{
+            backgroundColor: "white"
+        }}>
 
 
             <div
