@@ -237,12 +237,11 @@
         <e p="src" t="Include">
           <e p="App.js" t="Include" />
           <e p="components" t="Include">
-            <e p="Modal.js" t="Include" />
             <e p="SkeletonStructure" t="Include">
               <e p="VideoGamesSkeleton.js" t="Include" />
             </e>
             <e p="Structure" t="Include">
-              <e p="CreationForm.js" t="Include" />
+              <e p="CreationEditForm.js" t="Include" />
               <e p="InternalComponents" t="Include">
                 <e p="VideoGameCard.js" t="Include" />
               </e>
@@ -281,6 +280,7 @@
       </e>
       <e p="Controllers" t="Include">
         <e p="ApplicationDbContext.cs" t="Include" />
+        <e p="VideoGameController.cs" t="Include" />
       </e>
       <e p="Migrations" t="Include">
         <e p="20200105173829_FirstMigration.Designer.cs" t="Include" />

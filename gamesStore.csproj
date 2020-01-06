@@ -18,9 +18,8 @@
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
     <Content Remove="$(SpaRoot)**" />
-    <Content Include="ClientApp\src\components\Modal.js" />
     <Content Include="ClientApp\src\components\SkeletonStructure\VideoGamesSkeleton.js" />
-    <Content Include="ClientApp\src\components\Structure\CreationForm.js" />
+    <Content Include="ClientApp\src\components\Structure\CreationEditForm.js" />
     <Content Include="ClientApp\src\components\Structure\InternalComponents\VideoGameCard.js" />
     <Content Include="ClientApp\src\components\Structure\Layout.js" />
     <Content Include="ClientApp\src\components\Structure\OverView.js" />

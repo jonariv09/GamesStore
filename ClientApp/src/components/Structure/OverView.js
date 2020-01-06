@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import Grid from "@material-ui/core/Grid";
-import Container from "@material-ui/core/Container";
 import BannerGame from '../../images/banner-game.svg'
 import Button from "@material-ui/core/Button";
 import {Navigation} from 'react-feather';

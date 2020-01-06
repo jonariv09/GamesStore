@@ -51,7 +51,6 @@ export default function NavBar() {
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark main-navbar fixed-top">
 
 
-                <form action="">
                     <Paper component="form" className={classes.root}>
                         <InputBase
                             className={classes.input}
@@ -63,48 +62,17 @@ export default function NavBar() {
                             <Search className={"icon-search"}/>
                         </IconButton>
                     </Paper>
-                </form>
                 
                 
                 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-
-                        <li className="nav-item">
-                            {/*<a href="" className="nav-link" data-toggle="modal" data-target="#exampleModal">*/}
-                            {/*    <PlusCircle/>*/}
-                            {/*</a>*/}
-
-                            <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog"
-                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div className="modal-dialog" role="document">
-                                    <div className="modal-content">
-                                        <div className="modal-header">
-                                            <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
-                                            <button type="button" className="close" data-dismiss="modal"
-                                                    aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div className="modal-body">
-                                            ...
-                                        </div>
-                                        <div className="modal-footer">
-                                            <button type="button" className="btn btn-secondary"
-                                                    data-dismiss="modal">Close
-                                            </button>
-                                            <button type="button" className="btn btn-primary">Save changes</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" aria-haspopup="true" onClick={handleClick}>
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav ml-auto">
+                        
+                        <li className="nav-item dropdown">
+                            <a className="nav-link" href="#" aria-haspopup="true" onClick={handleClick}>
                                 <Power/>
                             </a>
+                            
                             <Menu
                                 id="simple-menu"
                                 anchorEl={anchorEl}

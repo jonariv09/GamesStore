@@ -46,11 +46,6 @@ const StyledBadge = withStyles(theme => ({
     },
 }))(Badge);
 
-// const theme = createMuiTheme({
-//     typography: {
-//         fontSize: 13
-//     }
-// });
 
 const themeSpacing = createMuiTheme({
     spacing: 0
@@ -60,7 +55,9 @@ export default function LateralMenu() {
 
     const sideList = side => (
 
-        <Grid item xs={"2"}>
+        <Grid item xs={2} style={{
+            backgroundColor: "white"
+        }}>
 
 
             <div
@@ -74,9 +71,7 @@ export default function LateralMenu() {
                     }}>
                         <ListItem button className={"list-item"}>
                             <ListItemIcon>
-                                <a href="">
                                     <Home className={"icon-list-item"}/>
-                                </a>
                             </ListItemIcon>
                             <ListItemText primary={"Overview"} className={"item-text-lateral"}/>
                         </ListItem>
